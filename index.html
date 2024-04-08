@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Reset some default styles */
+    body,
+    h1,
+    h2,
+    p,
+    table {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
+      line-height: 1.6;
+    }
+
+    section {}
+
+    /* Top Navigation Styles */
+    .topnav {
+      /* background-image: url("Background new.jpeg"); */
+      background-size: 57% 100%;
+      /* background-color: #fff; */
+      overflow: hidden;
+      width: 50%;
+      text-align: end;
+      margin-left: 25%;
+    }
+
+    .topnav img.logo {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Container Styles */
+    .container {
+      margin: 0 auto;
+      width: 50%;
+      border: 1px solid #dcdcdc;
+      border-radius: 2px;
+      background-color: white;
+    }
+
+    /* Main Container Styles */
+    .main-container {
+      padding: 20px;
+    }
+
+    /* Content Styles */
+    .content p {
+      margin-bottom: 15px;
+    }
+
+    .content p:nth-child(1) {
+      color: #1576b8;
+      font-size: 12px;
+      font-weight: 500;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 0.55px;
+    }
+
+    .content p:nth-child(2) {
+      color: #f28021;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 0.55px;
+    }
+
+    .content p:nth-child(3) {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 0.55px;
+    }
+
+    .content p:nth-child(4) {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 0.55px;
+    }
+
+    /* New Content Styles */
+    .new-content {
+      margin-top: 20px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 0.55px;
+    }
+
+    .sub-content p {
+      margin-bottom: 15px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 0.55px;
+    }
+
+    .sub-content p:nth-child(1) {
+      color: #f28021;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 0.55px;
+    }
+
+    .sub-content p:nth-child(2) {
+      color: #1469b1;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 0.55px;
+    }
+
+    .sub-content p:nth-child(3) {
+      border-bottom: 1px solid #b5b6b8;
+      margin-top: 8px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 0.55px;
+    }
+
+    .main {
+      border: 1px solid #d8d6d6;
+      /* width: 517px; */
+      /* height: 243px; */
+      border-radius: 4px;
+      /* margin-left: 19px; */
+      background-color: #fafafa;
+      /* padding: 20px 5px; */
+    }
+
+    /* Main Table Styles */
+    .main-table table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-family: "Inter", sans-serif !important;
+    }
+
+    .main-table th {
+      /* border: 1px solid #ddd; */
+      background: #eaebeb;
+      padding: 16px 8px;
+      text-align: left;
+      font-weight: 500;
+      font-family: "Inter", sans-serif !important;
+    }
+
+    .main-table td {
+      /* border: 1px solid #ddd; */
+      background: #ffffff;
+      padding: 8px;
+      text-align: left;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+    }
+
+    .table-sub-content {
+      padding: 0px 10px 15px 10px;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+    }
+
+    /* Progress Bar Styles */
+    .progress-container {
+      width: 100%;
+      height: 20px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background-color: #4caf50;
+      border-radius: 5px;
+    }
+
+    .percentage {
+      text-align: center;
+      line-height: 20px;
+      color: #000000;
+      margin-left: 8px;
+      /* display: flex;
+        justify-content: end; */
+    }
+
+    /* Border Container Styles */
+    .border-container {
+      margin-top: 20px;
+    }
+
+    .border {
+      border-top: 1px solid #ddd;
+    }
+
+    /* Footer Styles */
+    .foot {
+      margin-top: 20px;
+      padding: 20px 0;
+      background-color: #ffffff;
+    }
+
+    .main-body {
+      width: 80%;
+      /* margin: 0 auto; */
+    }
+
+    .upper-content p {
+      margin-bottom: 15px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 0.55px;
+    }
+
+    .middle-content p {
+      margin-bottom: 15px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 0.55px;
+    }
+
+    .bottom-content p {
+      margin-bottom: 5px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 0.55px;
+    }
+
+    /* Responsive Styles */
+    @media only screen and (max-width: 768px) {
+      .container {
+        width: 100%;
+        padding: 10px;
+      }
+
+      .main-container {
+        padding: 10px;
+      }
+
+      .main-body {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+
+    .new-container {
+      background-image: url("Background new.jpeg");
+      background-size: 57% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 20px;
+      color: #333;
+    }
+
+    .inline {
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="new-container">
+      <div class="topnav">
+        <img src="image 5 (1).png" class="logo" alt="RenewBuy" />
+      </div>
+
+      <div class="container">
+        <div class="main-container">
+          <div class="content">
+            <p>29 December, 2023</p>
+            <p>Comprehensive Visibility Report</p>
+            <p>Greetings Team RenewBuy,</p>
+            <p>
+              I hope this email finds you well. Please find attached detailed
+              report covering the visibility of quotes, proposals and CKYC
+              Visibility.
+            </p>
+          </div>
+
+          <div class="new-content">
+            <div class="sub-content">
+              <p>1. Quotes and Proposals</p>
+              <p>
+                Top five insurance companies with successful quotes and
+                proposals
+              </p>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="main">
+            <div class="main-table">
+              <div class="table-sub-content">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Sr.No</th>
+                      <th>Insurance Company</th>
+                      <th>Success Percentage</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>SBI General Insurance</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-1"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2</td>
+                      <td>Reliance General Insur...</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-2"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>3</td>
+                      <td>IIFCO Tokio Insurance</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-3"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>4</td>
+                      <td>Go Digit Insurance</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-4"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>5</td>
+                      <td>Universal Sompo Insur...</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-5"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-content">
+            <div class="sub-content">
+              <p></p>
+              <p>
+                Top five insurance companies with failure quotes and proposals
+              </p>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="main">
+            <div class="main-table">
+              <div class="table-sub-content">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Sr.No</th>
+                      <th>Insurance Company</th>
+                      <th>Success Percentage</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>SBI General Insurance</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-6"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2</td>
+                      <td>Reliance General Insur...</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-7"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>3</td>
+                      <td>IIFCO Tokio Insurance</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-8"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>4</td>
+                      <td>Go Digit Insurance</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-9"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>5</td>
+                      <td>Universal Sompo Insur...</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-10"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-content">
+            <div class="sub-content">
+              <p>2. CKYC Rates</p>
+              <p>Top five insurance companies with successful CKYC Rates</p>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="main">
+            <div class="main-table">
+              <div class="table-sub-content">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Sr.No</th>
+                      <th>Insurance Company</th>
+                      <th>Success Percentage</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>SBI General Insurance</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-11"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2</td>
+                      <td>Reliance General Insur...</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-12"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>3</td>
+                      <td>IIFCO Tokio Insurance</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-13"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>4</td>
+                      <td>Go Digit Insurance</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-14"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>5</td>
+                      <td>Universal Sompo Insur...</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-15"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-content">
+            <div class="sub-content">
+              <p></p>
+              <p>Top five insurance companies with failure CKYC Rates</p>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="main">
+            <div class="main-table">
+              <div class="table-sub-content">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Sr.No</th>
+                      <th>Insurance Company</th>
+                      <th>Success Percentage</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>SBI General Insurance</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-16"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2</td>
+                      <td>Reliance General Insur...</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-17"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>3</td>
+                      <td>IIFCO Tokio Insurance</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-18"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>4</td>
+                      <td>Go Digit Insurance</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-19"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>5</td>
+                      <td>Universal Sompo Insur...</td>
+                      <td>
+                        <div class="inline">
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar-20"></div>
+                          </div>
+                          <div class="percentage" id="percent">0%</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-container">
+            <div class="border"></div>
+          </div>
+
+          <div class="foot">
+            <div class="main-body">
+              <div class="upper-content">
+                <p>
+                  Attached, you will find a detailed Excel sheet providing a
+                  more granular breakdown of the data. If you have any
+                  questions or require further clarification, please do not
+                  hesitate to reach out.
+                </p>
+              </div>
+              <div class="middle-content">
+                <p>Thank you for your time and consideration.</p>
+              </div>
+              <div class="bottom-content">
+                <p>Best regards,</p>
+                <p>Vrushali Lale</p>
+                <p>Product Manager</p>
+                <p>Fyntune Solutions PVT LTD</p>
+                <p>XXX XXX XXXX</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    window.onload = function () {
+      function setProgress(percentages) {
+        const progressElements = document.querySelectorAll('.inline');
+        progressElements.forEach((progressElement, index) => {
+          const percent = percentages[index];
+          const progressBar = progressElement.querySelector('.progress-bar');
+          const percentageElement = progressElement.querySelector('.percentage');
+          if (progressBar && percentageElement) {
+            progressBar.style.width = `${percent}%`;
+            percentageElement.textContent = `${percent}%`;
+          }
+        });
+      }
+
+      // Example of manually setting progress percentages
+
+      setProgress([
+        25, 50, 75, 30, 60, 90, 40, 20, 70, 10, 45, 80, 15, 55, 85, 5, 35, 65,
+        95, 100,
+      ]);
+
+    }
+
+  </script>
+
+
+</body>
+
+</html>
